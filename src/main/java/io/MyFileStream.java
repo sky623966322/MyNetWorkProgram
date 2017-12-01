@@ -17,7 +17,7 @@ public class MyFileStream {
 	public static void main(String[] args) {
 		try {
 			File src = new File("E:\\安装包\\adt-bundle-windows-x86_64-20140321.zip");
-			long now = new Date().getTime();
+			long now = System.currentTimeMillis();
 			File dest1 = new File("" + now + "_1.zip");
 			File dest2 = new File("" + now + "_2.zip");
 			testNoBuffer(src, dest1);
